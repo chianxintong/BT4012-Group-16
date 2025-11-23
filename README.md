@@ -8,7 +8,7 @@ https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction/
 
 This repository contains the codes for our project on **automatic detection and analysis of fake online job postings**. We combine:
 
-- **Classical machine learning models** trained on rich engineered features and BERT embeddings  
+- **Classical machine learning models** trained on rich engineered features and text embeddings (with pre-trained BERT)
 - **Transformer-based models** (BERT, RoBERTa, DistilBERT) fine-tuned end-to-end on raw text  
 - **Unsupervised clustering** of fraudulent postings to uncover fraud subtypes and behavioural patterns
 
@@ -32,8 +32,8 @@ Our primary goal is to **protect job seekers** by developing high-recall fraud d
 - **BERT-base** achieved the best overall balance of **PR-AUC, F1-score, and recall**, making it the strongest standalone detector.
 - **DistilBERT** delivered competitive performance with roughly half of BERT’s computational cost.
 - **RoBERTa-base** performed well but slightly below BERT in PR-AUC and recall.
-- Among classical models, **LightGBM** performed strongly when trained on engineered features and BERT embeddings.
-- A **stacked ensemble** of LightGBM + Random Forest + MLP achieved the **highest recall** across all classical models, though at the cost of lower precision.
+- Among the baseline classical models, **LightGBM** performed strongly and when trained on engineered features and pre-trained BERT text embeddings.
+- A **stacked ensemble** of LightGBM + Random Forest + MLP with Logistic Regression as the meta-classifier achieved the **highest recall** across all classical models, though at the cost of lower precision.
 
 ### **Fraud-Related Patterns**
 Across EDA, engineered features, and transformer embeddings, fraudulent postings consistently showed:
@@ -52,15 +52,13 @@ These insights help interpret model predictions and support real-world moderatio
 
 ## 3. Repository Structure
 
-> TO BE ADJUSTED
-
 ```text
 .
 ├─ notebooks/
 │  ├─ 01 eda + ....ipynb
 │  ├─ 02  ....ipynb
 │  └─ classical/
-│     ├─ ............ipynb
+│     ├─ classical_machine_learning_models.ipynb
 │  └─ transformers/
 │     ├─ basebert_codes.ipynb
 │     ├─ roberta_codes.ipynb
