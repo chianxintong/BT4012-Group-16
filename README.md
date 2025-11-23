@@ -54,18 +54,20 @@ These insights help interpret model predictions and support real-world moderatio
 
 ```text
 .
-├─ notebooks/
-│  ├─ 01_eda_and_feature_engineering.ipynb
-│  ├─ 02_feature_selection.ipynb
-│  └─ classical/
-│     ├─ classical_machine_learning_models.ipynb
-│  └─ transformers/
-│     ├─ basebert_codes.ipynb
-│     ├─ roberta_codes.ipynb
-│     ├─ distilbert_codes.ipynb
-│     └─ berts_comparison.ipynb
-│  └─ clustering/
-│     ├─ clustering_analysis_of_fraudulent_listings.ipynb
+├─ 01_eda_and_feature_engineering.ipynb
+├─ 02_feature_selection.ipynb
+├─ classical/
+│  └─ classical_machine_learning_models.ipynb
+├─ transformers/
+│  ├─ basebert_codes.ipynb
+│  ├─ roberta_codes.ipynb
+│  ├─ distilbert_codes.ipynb
+│  └─ berts_comparison.ipynb
+├─ clustering/
+│  └─ clustering_analysis_of_fraudulent_listings.ipynb
+│
 ├─ report/
 │  └─ Report16.pdf
+│
 └─ README.md
+
