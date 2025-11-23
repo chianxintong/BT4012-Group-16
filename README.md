@@ -66,8 +66,5 @@ These insights help interpret model predictions and support real-world moderatio
 ├─ clustering/
 │  └─ clustering_analysis_of_fraudulent_listings.ipynb
 │
-├─ report/
-│  └─ Report16.pdf
-│
 └─ README.md
 
